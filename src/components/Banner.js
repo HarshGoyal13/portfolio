@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
+  const toRotate = [ " Blockcahin Developer, MERN-Stack Developer","Software Developer", "Web Designer", ];
   const period = 2000;
 
   useEffect(() => {
@@ -57,7 +57,9 @@ export const Banner = () => {
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1>{`Hi! I'm Harsh`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Passionate and proficient MERN stack developer, well-versed in MongoDB, Express.js, React.js, and Node.js. Demonstrates mastery in JavaScript, jQuery, and Bootstrap. Adept at crafting end-to-end web solutions, excelling in front-end aesthetics, back-end functionality, and effective problem-solving. Eager to take on a dynamic role as a MERN stack developer, committed to elevating organizational achievements</p>
+                 <p>
+                 Passionate and proficient blockchain developer with solid knowledge of the MERN stack. Experienced in Ethereum and Solana blockchains, with strong skills in MongoDB, Express.js, React.js, and Node.js. I specialize in crafting decentralized applications and end-to-end web solutions, excelling in both front-end and back-end development. Eager to contribute to blockchain innovations and build impactful solutions.
+                 </p>
 
                   <a className="no-underline" href="#connect">
                 <button onClick={() => console.log('connect')}>

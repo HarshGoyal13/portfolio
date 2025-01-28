@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="30" height="20">
+  <!-- Background Circle -->
+  <circle cx="25" cy="25" r="22" fill="none" stroke="#FFFFFF" stroke-width="2" />
+  
+  <!-- Flame Icon (representing testing) -->
+  <path d="M25,17 C23,13 20,10 20,6 C20,4 22,2 25,4 C28,2 30,4 30,6 C30,10 27,13 25,17 Z" fill="#FFFFFF" />
+  
+  <!-- Foundry Hammer (representing smart contract development/testing) -->
+  <rect x="21" y="22" width="8" height="15" fill="#FFFFFF" />
+  <rect x="19" y="26" width="12" height="4" fill="#FFFFFF" />
+  <rect x="22" y="30" width="6" height="4" fill="#FFFFFF" />
+  
+  <!-- Text "Foundry" -->
+  <text x="50%" y="46%" font-size="5" font-family="Arial, sans-serif" text-anchor="middle" fill="#FFFFFF">Foundry</text>
+</svg>

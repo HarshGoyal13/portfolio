@@ -1,81 +1,95 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
-import colorSharp from "../assets/img/color-sharp.png"
+import React from "react";
+import { CgCPlusPlus } from "react-icons/cg";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import { GiCrossedChains } from "react-icons/gi";
+import {
+  DiJavascript1,
+  DiReact,
+  DiNodejs,
+  DiMongodb,
+} from "react-icons/di";
+import {
+  SiSolidity,
+} from "react-icons/si";
 
-export const Skills = () => {
-  const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1
-    }
-  };
+import { FaRust, FaEthereum, FaGitAlt } from "react-icons/fa";
+import {  SiExpress, SiTailwindcss, SiSolana } from "react-icons/si";
 
+
+function Skills() {
   return (
-    <section className="skill" id="skills">
-        <div className="container">
-            <div className="row">
-                <div className="col-12">
-                    <div className="skill-bx wow zoomIn">
-                        <h2>Skills</h2>
-                        <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>Node Js</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>HTMl</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>CSS</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>JavaScript</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>React-JS</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Express-JS</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>MongoDB</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>C++</h5>
-                            </div>
-                        </Carousel>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
-    </section>
-  )
+    <div>
+
+    <h1 className="project-heading">
+          Professional <strong className="purple">Skillset </strong>
+    </h1>
+
+
+    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+   
+      <Col xs={4} md={2} className="tech-icons">
+        <CgCPlusPlus />
+      </Col>
+   
+
+
+      <Col xs={4} md={2} className="tech-icons">
+        <DiJavascript1 />
+      </Col>
+
+      <Col xs={4} md={2} className="tech-icons">
+        <FaRust />
+      </Col>
+
+      <Col xs={4} md={2} className="tech-icons">
+        <SiTailwindcss />
+      </Col>
+
+      <Col xs={4} md={2} className="tech-icons">
+        <DiMongodb />
+      </Col>
+
+      <Col xs={4} md={2} className="tech-icons">
+        <SiExpress />
+      </Col>
+
+      <Col xs={4} md={2} className="tech-icons">
+        <DiReact />
+      </Col>
+
+      <Col xs={4} md={2} className="tech-icons">
+        <DiNodejs />
+      </Col>
+
+      
+      <Col xs={4} md={2} className="tech-icons">
+        <FaGitAlt />
+      </Col>
+
+
+      <Col xs={4} md={2} className="tech-icons">
+      <GiCrossedChains />
+      </Col>
+
+      <Col xs={4} md={2} className="tech-icons">
+        <SiSolidity />
+      </Col>
+
+      <Col xs={4} md={2} className="tech-icons">
+        <FaEthereum />
+      </Col>
+
+      <Col xs={4} md={2} className="tech-icons">
+        <SiSolana />
+      </Col>
+
+
+
+    </Row>
+
+    </div>
+  );
 }
+
+export default Skills;
