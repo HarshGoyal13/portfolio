@@ -3,8 +3,11 @@ import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import { TailSpin } from "react-loader-spinner";
+
 
 export const Contact = () => {
+  
   const formInitialDetails = {
     firstName: '',
     lastName: '',
